@@ -1,0 +1,257 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\EasyCopy.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\EasyCopy.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MyEasyCopy"
+FONT 9, "ËÎÌו"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MyEasyCopy 2.4 version",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Right (C)  Zhao Yong July 2010",IDC_STATIC,40,25,188,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_EASYCOPY_DIALOG DIALOGEX 0, 0, 762, 369
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MyEasyCopy"
+FONT 9, "ËÎÌו", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,86,27,620,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_SOURCEPATH,713,27,41,12
+    EDITTEXT        IDC_EDIT2,86,50,620,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_DESTPATH,713,52,41,12
+    EDITTEXT        IDC_EDIT_COPYTYPE,86,73,620,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EXCEPT,220,96,486,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Begin",IDC_BUTTON_BEGIN,628,344,58,18
+    PUSHBUTTON      "Close",IDCANCEL,697,344,58,18
+    LTEXT           "Source path:",IDC_STATIC,14,29,70,12
+    LTEXT           "Destination path:",IDC_STATIC,14,52,70,12
+    LTEXT           "Copy file type:",IDC_STATIC,14,75,70,12
+    EDITTEXT        IDC_EDIT_CLEW,179,119,577,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    CONTROL         "List1",IDC_LIST_FILE_INFORMATION,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | WS_BORDER,7,155,748,173
+    CONTROL         "Progress1",IDC_PROGRESS_COPY,"msctls_progress32",
+                    PBS_SMOOTH | WS_BORDER,7,347,503,15
+    LTEXT           "Copy failure information:",IDC_STATIC,14,140,112,12
+    LTEXT           "",IDC_STATIC_FILENUMBER,13,119,152,12
+    CTEXT           "",IDC_STATIC_TIME,520,350,95,10
+    LTEXT           "These files you don't want to copy(without path):",
+                    IDC_STATIC,14,98,201,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,4
+ PRODUCTVERSION 2,0,0,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "Zhao Yong\0"
+            VALUE "CompanyName", "Nokia\0"
+            VALUE "FileDescription", "Copy these files with your necessary file's type.\0"
+            VALUE "FileVersion", "2, 0, 0, 4\0"
+            VALUE "InternalName", "MyEasyCopy\0"
+            VALUE "LegalCopyright", "Right (C) 2010 Zhao Yong\0"
+            VALUE "LegalTrademarks", "None\0"
+            VALUE "OriginalFilename", "MyEasyCopy.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "MyEasyCopy\0"
+            VALUE "ProductVersion", "2.4\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_EASYCOPY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 755
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 362
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "About MyEasyCopy(&A)..."
+    IDS_STRING_SELECTFOLD   """Select folder and press the OK button"""
+    IDS_STRING_CLEW         "MyEasyCopy"
+    IDS_STRING_ERROR1       "Source path should not equal to destination path!"
+    IDS_STRING_CANCEL       "Cancel"
+    IDS_STRING_START        "Begin"
+    IDS_STRING_CLEW_1       "You must input the file's type you want to copy!"
+    IDS_STRING_CLEW2        "Searching file......"
+    IDS_STRING_FILENAME     "File:"
+    IDS_STRING_FILEPLACE    "Source File Path:"
+    IDS_STRING_CLEW3        "Input the source path."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_CLEW4        "Input the destination path."
+    IDS_STRING_FILENUMBERCLEW "Find %d file in the folder."
+    IDS_STRING_DESTINATION_FILE "Destination File Path:"
+    IDS_STRING_COPYFILE_FAIL "Copy file fail!"
+    IDS_STRING_COPYFAIL_NUM "%d files are copyed and %d file copy failure!"
+    IDS_STRING_SUSPENDTHREADERROR "Thread exceptional pause!"
+    IDS_STRING_PAUSECLEW    "Cancel the copying file?"
+    IDS_STRING_COPYING_FILEINFO "Copying %d / %d files."
+    IDS_STRING_SCANINGTIME  "%02d:%02d:%02d"
+    IDS_STRING_COPY_TYPE    "*.c;*.cpp;*.h;*.inc;*.hi;*.config;*.component;*.feature;*.domain;*.resource;*.ti;*.zip;*.txt;*.gz;*.vsd;*.xml;*.tgz;*.std;*.csm;*.sx;*.sxdef;*.confml;*.java"
+    IDS_STRING_STOP         "Stop"
+    IDS_STRING_SOURCEPATH_ERROR "Can not find the source path!"
+    IDS_STRING_DESTINATIONPATH_ERROR "Can not find the destination path!"
+    IDS_STRING_EXCLUDE_FILE "zutil.h;zutil.c"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\EasyCopy.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
